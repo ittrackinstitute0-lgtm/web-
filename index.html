@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DEMO - Luxury Fine Dining Restaurant & Lounge. Experience artisanal gastronomy, royal gold ambiance, and Michelin-star culinary artistry.">
+  <title>DEMO | Royal Fine Dining & Luxury Lounge</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="golden-ring-spinner"></div>
+      <div class="preloader-logo">
+        <span class="gold-shimmer-text">DEMO</span>
+        <p class="preloader-tagline">ROYAL FINE DINING</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container top-bar-inner">
+      <div class="top-info">
+        <span><i class="fa-solid fa-crown gold-icon"></i> Michelin Star Excellence 2026</span>
+        <span class="separator">•</span>
+        <span><i class="fa-solid fa-clock gold-icon"></i> Open Daily: 12:00 PM - 11:30 PM</span>
+        <span class="separator">•</span>
+        <span><i class="fa-solid fa-location-dot gold-icon"></i> 742 Evergreen Avenue, Luxury District</span>
+      </div>
+      <div class="top-contact">
+        <a href="tel:+18005550199"><i class="fa-solid fa-phone"></i> +1 (800) 555-DEMO</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo">
+        <div class="logo-symbol">
+          <i class="fa-solid fa-crown"></i>
+        </div>
+        <div class="logo-text">
+          <span class="gold-shimmer-text brand-name">DEMO</span>
+          <span class="brand-sub">HAUTE CUISINE</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Our Story</a></li>
+          <li class="nav-item"><a href="#menu" class="nav-link">Cuisine Menu</a></li>
+          <li class="nav-item"><a href="#chef" class="nav-link">Chef's Cut</a></li>
+          <li class="nav-item"><a href="#gallery" class="nav-link">Atmosphere</a></li>
+          <li class="nav-item"><a href="#reviews" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="header-actions">
+        <!-- Cart Trigger Button -->
+        <button class="cart-trigger-btn" id="openCartBtn" title="View Order Bag" aria-label="Cart">
+          <i class="fa-solid fa-utensils"></i>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+
+        <!-- Animated Gold Button: Reservation -->
+        <a href="#reservation" class="btn btn-gold btn-shimmer">
+          <span class="btn-text">Reserve a Table</span>
+          <span class="btn-icon"><i class="fa-solid fa-champagne-glasses"></i></span>
+        </a>
+
+        <!-- Hamburger Icon for Mobile -->
+        <button class="mobile-toggle-btn" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="logo-text">
+        <span class="gold-shimmer-text brand-name">DEMO</span>
+        <span class="brand-sub">HAUTE CUISINE</span>
+      </div>
+      <button class="close-drawer-btn" id="closeDrawer">&times;</button>
+    </div>
+    <ul class="drawer-list">
+      <li><a href="#hero" class="drawer-link">Home</a></li>
+      <li><a href="#about" class="drawer-link">Our Story</a></li>
+      <li><a href="#menu" class="drawer-link">Cuisine Menu</a></li>
+      <li><a href="#chef" class="drawer-link">Chef's Cut</a></li>
+      <li><a href="#gallery" class="drawer-link">Atmosphere</a></li>
+      <li><a href="#reviews" class="drawer-link">Reviews</a></li>
+      <li><a href="#contact" class="drawer-link">Contact</a></li>
+      <li>
+        <a href="#reservation" class="btn btn-gold w-100 mt-20 drawer-res-btn">
+          <span>Book Reservation</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-particles" id="heroParticles"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="star-group">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+          <span class="badge-text">FINEST DINING EXPERIENCE OF 2026</span>
+        </div>
+
+        <h1 class="hero-title">
+          Where Royal Elegance Meets <br>
+          <span class="gold-shimmer-text">Culinary Mastery</span>
+        </h1>
+
+        <p class="hero-description">
+          Step into <span class="gold-highlight">DEMO</span>, a sanctuary of refined gastronomy, gold-crafted ambiance, 
+          and sensory indulgences created by world-renowned executive chefs.
+        </p>
+
+        <!-- Animated Buttons Group -->
+        <div class="hero-buttons">
+          <a href="#reservation" class="btn btn-gold btn-animated-glow">
+            <span class="btn-ripple"></span>
+            <span class="btn-text">Book Your Table</span>
+            <span class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+          </a>
+
+          <a href="#menu" class="btn btn-outline-gold btn-hover-slide">
+            <span class="btn-text">Explore Royal Menu</span>
+            <span class="btn-arrow"><i class="fa-solid fa-book-open"></i></span>
+          </a>
+        </div>
+
+        <!-- Metric Counter Badges -->
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <span class="metric-number gold-shimmer-text" data-count="3">3</span>
+            <span class="metric-plus">★</span>
+            <p class="metric-label">Michelin Stars</p>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-number gold-shimmer-text" data-count="120">120</span>
+            <span class="metric-plus">+</span>
+            <p class="metric-label">Signature Dishes</p>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-number gold-shimmer-text" data-count="28">28</span>
+            <span class="metric-plus">+</span>
+            <p class="metric-label">Years of Heritage</p>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric-card">
+            <span class="metric-number gold-shimmer-text" data-count="99">99</span>
+            <span class="metric-plus">%</span>
+            <p class="metric-label">Guest Delight</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Down Indicator -->
+    <a href="#about" class="scroll-down-indicator" aria-label="Scroll down">
+      <span class="mouse-icon">
+        <span class="wheel"></span>
+      </span>
+      <span class="scroll-text">DISCOVER</span>
+    </a>
+  </section>
+
+  <!-- About / Heritage Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <div class="image-frame-gold">
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80" alt="DEMO Luxury Dining Room" class="main-about-img">
+            <div class="experience-badge">
+              <span class="exp-number gold-shimmer-text">DEMO</span>
+              <span class="exp-sub">Grand Legacy</span>
+            </div>
+          </div>
+          <div class="secondary-image-floating">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Exquisite Plating" class="floating-dish-img">
+          </div>
+        </div>
+
+        <div class="about-text-content">
+          <div class="section-tag">
+            <i class="fa-solid fa-gem gold-icon"></i>
+            <span class="tag-title">THE DEMO HERITAGE</span>
+          </div>
+          <h2 class="section-title">
+            Crafting Unforgettable Moments in <br>
+            <span class="gold-shimmer-text">Gilded Splendor</span>
+          </h2>
+          <p class="lead-text">
+            Founded with an unrelenting pursuit of culinary perfection, <strong class="gold-text">DEMO</strong> reimagines modern dining into a symphony of rare flavors, timeless décor, and peerless service.
+          </p>
+          <p class="body-text">
+            From 24-karat gold-dusted Wagyu cuts to hand-foraged black truffles and vintage cellar collections, every nuance is curated to stir the soul and celebrate life's finest milestones.
+          </p>
+
+          <!-- Feature Cards -->
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon-box">
+                <i class="fa-solid fa-wheat-awn"></i>
+              </div>
+              <div class="feature-detail">
+                <h4 class="gold-text">Organic Artisanal Sourcing</h4>
+                <p>Seasonal ingredients harvested exclusively from sustainable heritage farms.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-box">
+                <i class="fa-solid fa-wine-glass-empty"></i>
+              </div>
+              <div class="feature-detail">
+                <h4 class="gold-text">Sommelier Cellar</h4>
+                <p>Over 800 vintage labels curated by world-class certified masters.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feature-icon-box">
+                <i class="fa-solid fa-bell-concierge"></i>
+              </div>
+              <div class="feature-detail">
+                <h4 class="gold-text">VIP Private Suites</h4>
+                <p>Exclusive gold-appointed private salons for discerning banquets & galas.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-action">
+            <a href="#reservation" class="btn btn-gold btn-shimmer">
+              <span class="btn-text">Reserve Your Experience</span>
+              <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <div class="signature-block">
+              <div class="signature-text gold-shimmer-text">Chef Laurent Beaumont</div>
+              <span class="signature-title">Master Executive Chef</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Cuisine Menu Section -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag center">
+          <i class="fa-solid fa-star gold-icon"></i>
+          <span class="tag-title">OUR EPICUREAN SELECTION</span>
+          <i class="fa-solid fa-star gold-icon"></i>
+        </div>
+        <h2 class="section-title">
+          Explore The <span class="gold-shimmer-text">DEMO Gastronomy</span>
+        </h2>
+        <p class="section-subtitle">
+          Indulge in masterpieces prepared with precision, artistry, and the world's most coveted ingredients.
+        </p>
+
+        <!-- Category Filter Tabs -->
+        <div class="menu-categories" id="menuCategories">
+          <button class="menu-cat-btn active" data-category="all">
+            <i class="fa-solid fa-border-all"></i> All Offerings
+          </button>
+          <button class="menu-cat-btn" data-category="starters">
+            <i class="fa-solid fa-bowl-food"></i> Royal Starters
+          </button>
+          <button class="menu-cat-btn" data-category="mains">
+            <i class="fa-solid fa-drumstick-bite"></i> Prime Mains
+          </button>
+          <button class="menu-cat-btn" data-category="specials">
+            <i class="fa-solid fa-crown"></i> Chef's Gold Cuts
+          </button>
+          <button class="menu-cat-btn" data-category="desserts">
+            <i class="fa-solid fa-cake-candles"></i> Gold Confections
+          </button>
+          <button class="menu-cat-btn" data-category="drinks">
+            <i class="fa-solid fa-martini-glass-citrus"></i> Vintage Elixirs
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu Items Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Dynamic & Pre-rendered items -->
+        <!-- Item 1: Starter -->
+        <div class="menu-card" data-category="starters">
+          <div class="menu-img-holder">
+            <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=600&q=80" alt="Royal Truffle Burrata">
+            <span class="menu-badge">Chef's Choice</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-title-row">
+              <h3 class="dish-title">Royal Truffle Burrata</h3>
+              <div class="dish-price gold-shimmer-text">$38</div>
+            </div>
+            <p class="dish-desc">Imported Pugliese burrata, shaved Umbrian black truffles, golden heirloom tomatoes, and aged 25-yr Modena balsamic glaze.</p>
+            <div class="menu-card-footer">
+              <span class="dish-tags"><i class="fa-solid fa-leaf"></i> Vegetarian • Organic</span>
+              <button class="btn-card-add add-to-cart-btn" data-id="1" data-title="Royal Truffle Burrata" data-price="38" data-img="https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=600&q=80">
+                <i class="fa-solid fa-plus"></i> Order
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Special -->
+        <div class="menu-card featured-gold" data-category="specials">
+          <div class="menu-img-holder">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80" alt="24K Golden Wagyu Ribeye">
+            <span class="menu-badge gold-badge"><i class="fa-solid fa-crown"></i> 24K Signature</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-title-row">
+              <h3 class="dish-title">24K Gold Leaf Wagyu A5</h3>
+              <div class="dish-price gold-shimmer-text">$195</div>
+            </div>
+            <p class="dish-desc">Miyazaki Japanese A5 Ribeye draped in pure edible 24K gold foil, smoked sea salt flakes, and roasted bone marrow emulsion.</p>
+            <div class="menu-card-footer">
+              <span class="dish-tags"><i class="fa-solid fa-fire"></i> Signature • Rare Cut</span>
+              <button class="btn-card-add add-to-cart-btn" data-id="2" data-title="24K Gold Leaf Wagyu A5" data-price="195" data-img="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=600&q=80">
+                <i class="fa-solid fa-plus"></i> Order
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Main -->
+        <div class="menu-card" data-category="mains">
+          <div class="menu-img-holder">
+            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80" alt="Chilean Sea Bass Supreme">
+            <span class="menu-badge">Ocean Prime</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-title-row">
+              <h3 class="dish-title">Chilean Sea Bass Supreme</h3>
+              <div class="dish-price gold-shimmer-text">$78</div>
+            </div>
+            <p class="dish-desc">Pan-seared glacier sea bass served over saffron risotto, baby asparagus tips, and lemon-infused champagne butter reduction.</p>
+            <div class="menu-card-footer">
+              <span class="dish-tags"><i class="fa-solid fa-water"></i> Gluten-Free</span>
+              <button class="btn-card-add add-to-cart-btn" data-id="3" data-title="Chilean Sea Bass Supreme" data-price="78" data-img="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=600&q=80">
+                <i class="fa-solid fa-plus"></i> Order
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Starter -->
+        <div class="menu-card" data-category="starters">
+          <div class="menu-img-holder">
+            <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=600&q=80" alt="Osetra Imperial Caviar">
+            <span class="menu-badge">Luxury Reserve</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-title-row">
+              <h3 class="dish-title">Imperial Osetra Caviar</h3>
+              <div class="dish-price gold-shimmer-text">$145</div>
+            </div>
+            <p class="dish-desc">Classic mother-of-pearl service, golden buckwheat blinis, organic egg mimosa, crème fraîche, and chives.</p>
+            <div class="menu-card-footer">
+              <span class="dish-tags"><i class="fa-solid fa-gem"></i> Caspian Sea Gold</span>
+              <button class="btn-card-add add-to-cart-btn" data-id="4" data-title="Imperial Osetra Caviar" data-price="145" data-img="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=600&q=80">
+                <i class="fa-solid fa-plus"></i> Order
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Mains -->
+        <div class="menu-card" data-category="mains">
+          <div class="menu-img-holder">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=600&q=80" alt="Truffled Duck Breast">
+            <span class="menu-badge">French Heritage</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-title-row">
+              <h3 class="dish-title">Roasted Moulard Duck</h3>
+              <div class="dish-price gold-shimmer-text">$68</div>
+            </div>
+            <p class="dish-desc">Honey-spiced pan-roasted duck breast with caramelized blood orange gastrique, wild parsnip puree, and braised endive.</p>
+            <div class="menu-card-footer">
+              <span class="dish-tags"><i class="fa-solid fa-utensils"></i> Chef's Specialty</span>
+              <button class="btn-card-add add-to-cart-btn" data-id="5" data-title="Roasted Moulard Duck" data-price="68" data-img="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=600&q=80">
+                <i class="fa-solid fa-plus"></i> Order
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Desserts -->
+        <div class="menu-card" data-category="desserts">
+          <div class="menu-img-holder">
+            <img src="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=600&q=80" alt="Golden Sphere Chocolate">
+            <span class="menu-badge gold-badge"><i class="fa-solid fa-fire-burner"></i> Table Flambé</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-title-row">
+              <h3 class="dish-title">The DEMO Gold Sphere</h3>
+              <div class="dish-price gold-shimmer-text">$42</div>
+            </div>
+            <p class="dish-desc">Valrhona dark chocolate orb dusted in gold shimmer, filled with Madagascar vanilla bean gelato, melted with hot Grand Marnier caramel.</p>
+            <div class="menu-card-footer">
+              <span class="dish-tags"><i class="fa-solid fa-cake-candles"></i> Master Pastry</span>
+              <button class="btn-card-add add-to-cart-btn" data-id="6" data-title="The DEMO Gold Sphere" data-price="42" data-img="https://images.unsplash.com/photo-1579372786545-d24232daf58c?auto=format&fit=crop&w=600&q=80">
+                <i class="fa-solid fa-plus"></i> Order
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7: Drinks -->
+        <div class="menu-card" data-category="drinks">
+          <div class="menu-img-holder">
+            <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80" alt="Gilded Old Fashioned">
+            <span class="menu-badge">Mixology Art</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-title-row">
+              <h3 class="dish-title">Gilded Amber Old Fashioned</h3>
+              <div class="dish-price gold-shimmer-text">$34</div>
+            </div>
+            <p class="dish-desc">Rare 18-year Kentucky bourbon, smoked cherrywood, aromatic gold bitters, finished with hand-carved crystal ice and 24K gold foil.</p>
+            <div class="menu-card-footer">
+              <span class="dish-tags"><i class="fa-solid fa-glass-water"></i> Signature Cocktail</span>
+              <button class="btn-card-add add-to-cart-btn" data-id="7" data-title="Gilded Amber Old Fashioned" data-price="34" data-img="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80">
+                <i class="fa-solid fa-plus"></i> Order
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8: Special -->
+        <div class="menu-card featured-gold" data-category="specials">
+          <div class="menu-img-holder">
+            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80" alt="Brittany Blue Lobster">
+            <span class="menu-badge gold-badge"><i class="fa-solid fa-crown"></i> Rare Oceanic</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-title-row">
+              <h3 class="dish-title">Brittany Blue Lobster Thermidor</h3>
+              <div class="dish-price gold-shimmer-text">$160</div>
+            </div>
+            <p class="dish-desc">Whole wild-caught blue lobster, enriched with Cognac, Gruyère de Comté crust, golden tarragon cream, and charred Meyer lemon.</p>
+            <div class="menu-card-footer">
+              <span class="dish-tags"><i class="fa-solid fa-crown"></i> Limited Daily</span>
+              <button class="btn-card-add add-to-cart-btn" data-id="8" data-title="Brittany Blue Lobster Thermidor" data-price="160" data-img="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80">
+                <i class="fa-solid fa-plus"></i> Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Footer Call to Action -->
+      <div class="menu-cta-banner">
+        <div class="banner-text">
+          <h3 class="gold-shimmer-text">Looking for a Private Degustation Experience?</h3>
+          <p>Our Head Sommelier and Executive Chef curate bespoke 7-course tasting menus tailored to your palate.</p>
+        </div>
+        <a href="#reservation" class="btn btn-gold btn-animated-glow">
+          <span class="btn-text">Request Tasting Menu</span>
+          <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chef's Showcase / Parallax Banner -->
+  <section class="chef-banner-section" id="chef">
+    <div class="chef-overlay"></div>
+    <div class="container relative-z">
+      <div class="chef-content-box">
+        <div class="chef-quote-icon gold-shimmer-text">
+          <i class="fa-solid fa-quote-left"></i>
+        </div>
+        <h2 class="chef-quote-text">
+          "At <span class="gold-shimmer-text">DEMO</span>, cooking is not merely preparation—it is an orchestral performance where gold meets passion, fire, and emotion on every plate."
+        </h2>
+        <div class="chef-profile">
+          <div class="chef-avatar">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=300&q=80" alt="Executive Chef Laurent Beaumont">
+          </div>
+          <div class="chef-meta">
+            <h4 class="gold-text">Laurent Beaumont</h4>
+            <p>Executive Culinary Director • 3 Michelin Stars</p>
+            <div class="chef-awards">
+              <span><i class="fa-solid fa-award gold-icon"></i> World Best Chef 2024</span>
+              <span><i class="fa-solid fa-medal gold-icon"></i> Legion of Culinary Honor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIP Atmosphere & Gallery Section -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag center">
+          <i class="fa-solid fa-eye gold-icon"></i>
+          <span class="tag-title">SENSORY LUXURY</span>
+          <i class="fa-solid fa-eye gold-icon"></i>
+        </div>
+        <h2 class="section-title">
+          Step Inside The <span class="gold-shimmer-text">DEMO Realm</span>
+        </h2>
+        <p class="section-subtitle">
+          Intimate ambient lighting, custom gold chandeliers, Italian velvet booths, and an aura of pure prestige.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item large" data-title="Grand Dining Hall">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Main Hall">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gold-text">Grand Hall</span>
+              <h4>The Royal Golden Atrium</h4>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-title="Cocktail Lounge">
+          <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=600&q=80" alt="Lounge">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gold-text">Lounge</span>
+              <h4>The Amber & Gold Bar</h4>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-title="Private Suite">
+          <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=600&q=80" alt="Private Suite">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gold-text">Exclusive</span>
+              <h4>Imperial Private Dining</h4>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item" data-title="Wine Cellar">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80" alt="Wine Vault">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gold-text">Sommelier Vault</span>
+              <h4>Reserve Vintage Cellar</h4>
+            </div>
+          </div>
+        </div>
+        <div class="gallery-item large" data-title="Culinary Theater">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=80" alt="Chef Counter">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gold-text">Chef's Table</span>
+              <h4>Open Flame Culinary Theater</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Table Reservation Section -->
+  <section class="reservation-section" id="reservation">
+    <div class="container">
+      <div class="reservation-card-wrapper">
+        <div class="reservation-header text-center">
+          <div class="section-tag center">
+            <i class="fa-solid fa-champagne-glasses gold-icon"></i>
+            <span class="tag-title">ROYAL RESERVATIONS</span>
+            <i class="fa-solid fa-champagne-glasses gold-icon"></i>
+          </div>
+          <h2 class="section-title">
+            Reserve Your <span class="gold-shimmer-text">Gourmet Journey</span>
+          </h2>
+          <p class="section-subtitle">
+            Book in advance to secure prime seating at DEMO. We accommodate custom dietary and celebration requests.
+          </p>
+        </div>
+
+        <form class="reservation-form" id="resForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resName"><i class="fa-solid fa-user gold-icon"></i> Full Name *</label>
+              <input type="text" id="resName" name="fullName" placeholder="e.g. Sir Edward Montgomery" required>
+            </div>
+            <div class="form-group">
+              <label for="resEmail"><i class="fa-solid fa-envelope gold-icon"></i> Email Address *</label>
+              <input type="email" id="resEmail" name="email" placeholder="e.g. edward@luxury.com" required>
+            </div>
+            <div class="form-group">
+              <label for="resPhone"><i class="fa-solid fa-phone gold-icon"></i> Phone Number *</label>
+              <input type="tel" id="resPhone" name="phone" placeholder="+1 (555) 000-0000" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="resGuests"><i class="fa-solid fa-user-group gold-icon"></i> Number of Guests *</label>
+              <select id="resGuests" name="guests" required>
+                <option value="1 Guest">1 Guest (Solo Connoisseur)</option>
+                <option value="2 Guests" selected>2 Guests (Romantic Dinner)</option>
+                <option value="3 Guests">3 Guests</option>
+                <option value="4 Guests">4 Guests (Executive Table)</option>
+                <option value="6 Guests">6 Guests (Grand Party)</option>
+                <option value="8+ VIP Private Hall">8+ VIP Private Hall</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="resDate"><i class="fa-solid fa-calendar-days gold-icon"></i> Preferred Date *</label>
+              <input type="date" id="resDate" name="date" required>
+            </div>
+
+            <div class="form-group">
+              <label for="resTime"><i class="fa-solid fa-clock gold-icon"></i> Time Slot *</label>
+              <select id="resTime" name="time" required>
+                <option value="12:30 PM - Lunch Degustation">12:30 PM - Lunch Degustation</option>
+                <option value="02:00 PM - Afternoon High Tea">02:00 PM - Afternoon High Tea</option>
+                <option value="06:30 PM - Sunset Twilight" selected>06:30 PM - Sunset Twilight</option>
+                <option value="08:00 PM - Prime Evening Seating">08:00 PM - Prime Evening Seating</option>
+                <option value="09:45 PM - Late Night Gold Lounge">09:45 PM - Late Night Gold Lounge</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="resSeating"><i class="fa-solid fa-chair gold-icon"></i> Preferred Seating Area</label>
+              <div class="seating-pills" id="seatingPills">
+                <button type="button" class="seat-pill active" data-seat="Main Gold Atrium">Main Gold Atrium</button>
+                <button type="button" class="seat-pill" data-seat="Intimate Romantic Booth">Intimate Romantic Booth</button>
+                <button type="button" class="seat-pill" data-seat="Chef's Counterfront">Chef's Counterfront</button>
+                <button type="button" class="seat-pill" data-seat="Rooftop Skyline Terrace">Rooftop Skyline Terrace</button>
+                <button type="button" class="seat-pill" data-seat="Private VIP Suite">Private VIP Suite</button>
+              </div>
+              <input type="hidden" id="selectedSeat" name="seating" value="Main Gold Atrium">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="resRequests"><i class="fa-solid fa-pen-nib gold-icon"></i> Special Occasion or Dietary Preferences</label>
+              <textarea id="resRequests" name="requests" rows="3" placeholder="Anniversary celebration, champagne on arrival, allergies, or wine pairing recommendations..."></textarea>
+            </div>
+          </div>
+
+          <!-- Submit Button with Gold Sweep Animation -->
+          <div class="form-submit-container text-center">
+            <button type="submit" class="btn btn-gold btn-large btn-animated-glow" id="submitResBtn">
+              <span class="btn-ripple"></span>
+              <span class="btn-text">Confirm Royal Reservation</span>
+              <span class="btn-icon"><i class="fa-solid fa-sparkles"></i></span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guest Testimonials Section -->
+  <section class="testimonials-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <div class="section-tag center">
+          <i class="fa-solid fa-award gold-icon"></i>
+          <span class="tag-title">ACCLAIMED WORLDWIDE</span>
+          <i class="fa-solid fa-award gold-icon"></i>
+        </div>
+        <h2 class="section-title">
+          Words From Our <span class="gold-shimmer-text">Honored Patrons</span>
+        </h2>
+        <p class="section-subtitle">
+          Read what food critics, celebrities, and fine dining enthusiasts say about DEMO.
+        </p>
+      </div>
+
+      <div class="reviews-slider">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "DEMO redefines haute cuisine. The 24K Gold Wagyu is without question the most sublime culinary experience of my 20-year career as a food critic. Absolute royalty."
+          </p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Sophia Sterling">
+            </div>
+            <div class="reviewer-meta">
+              <h4 class="gold-text">Sophia Sterling</h4>
+              <span>International Epicurean Review</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card featured">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "We celebrated our 10th anniversary in DEMO's VIP Suite. The attention to detail, golden ambiance, and custom wine pairings made it feel like a private royal banquet."
+          </p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Arthur & Elena Vance">
+            </div>
+            <div class="reviewer-meta">
+              <h4 class="gold-text">Arthur & Elena Vance</h4>
+              <span>Private Patrons</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "From the moment you walk past the gold foyer to the grand finale of the Gold Chocolate Sphere, DEMO treats you to sensory perfection. Worth every single star."
+          </p>
+          <div class="reviewer-info">
+            <div class="reviewer-avatar">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Marcus Holloway">
+            </div>
+            <div class="reviewer-meta">
+              <h4 class="gold-text">Marcus Holloway</h4>
+              <span>Michelin Guide Contributor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon gold-shimmer-text">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <h3 class="gold-text">Prime Location</h3>
+          <p>742 Evergreen Avenue, Luxury Arts District, Suite 100</p>
+          <span class="contact-sub">Valet Parking Available 24/7</span>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon gold-shimmer-text">
+            <i class="fa-solid fa-clock"></i>
+          </div>
+          <h3 class="gold-text">Service Hours</h3>
+          <p><strong>Lunch:</strong> 12:00 PM – 03:30 PM</p>
+          <p><strong>Dinner:</strong> 06:00 PM – 11:30 PM</p>
+          <span class="contact-sub">Lounge open until 02:00 AM Fri & Sat</span>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon gold-shimmer-text">
+            <i class="fa-solid fa-champagne-glasses"></i>
+          </div>
+          <h3 class="gold-text">Direct Contact</h3>
+          <p>Reservations: <a href="tel:+18005550199">+1 (800) 555-DEMO</a></p>
+          <p>Inquiries: <a href="mailto:concierge@demo-dining.com">concierge@demo-dining.com</a></p>
+          <span class="contact-sub">VIP Event Management Desk</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-symbol">
+            <i class="fa-solid fa-crown"></i>
+          </div>
+          <h2 class="gold-shimmer-text footer-brand-name">DEMO</h2>
+          <p class="footer-tagline">
+            An extraordinary celebration of taste, luxury, and artistic passion. Elevating fine dining beyond borders since 1998.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-link" title="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="gold-text">Quick Links</h4>
+          <ul>
+            <li><a href="#hero">Grand Foyer</a></li>
+            <li><a href="#about">Heritage Story</a></li>
+            <li><a href="#menu">Cuisine Menu</a></li>
+            <li><a href="#chef">Executive Chef</a></li>
+            <li><a href="#reservation">Table Reservation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="gold-text">Experiences</h4>
+          <ul>
+            <li><a href="#reservation">Chef's Tasting Table</a></li>
+            <li><a href="#reservation">Sommelier Pairing</a></li>
+            <li><a href="#reservation">Private Suite Banquets</a></li>
+            <li><a href="#reservation">Gala & Weddings</a></li>
+            <li><a href="#reservation">Gift Certificates</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4 class="gold-text">The Gilded Gazette</h4>
+          <p>Subscribe to receive seasonal tasting invitations and sommelier reserves.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="input-with-btn">
+              <input type="email" placeholder="Enter your VIP email..." required>
+              <button type="submit" class="btn btn-gold btn-sm">
+                <span>Join</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong class="gold-text">DEMO</strong> Restaurant & Lounge. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>•</span>
+          <a href="#">Terms of Dining</a>
+          <span>•</span>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Shopping Cart / Order Bag Drawer -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3 class="gold-text"><i class="fa-solid fa-utensils"></i> Your Order Selection</h3>
+      <button class="cart-close-btn" id="closeCartBtn">&times;</button>
+    </div>
+    <div class="cart-drawer-body" id="cartItemsContainer">
+      <!-- Items dynamically populated via JS -->
+      <div class="empty-cart-msg">
+        <i class="fa-solid fa-plate-wheat gold-icon"></i>
+        <p>Your culinary tray is empty.</p>
+        <span class="sub">Select signature delicacies from our menu.</span>
+      </div>
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-summary-row">
+        <span>Subtotal</span>
+        <span class="gold-text" id="cartSubtotal">$0.00</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Service & Gratuity (15%)</span>
+        <span id="cartGratuity">$0.00</span>
+      </div>
+      <div class="cart-total-row">
+        <span>Total Amount</span>
+        <span class="gold-shimmer-text" id="cartTotal">$0.00</span>
+      </div>
+      <button class="btn btn-gold w-100 btn-animated-glow mt-15" id="checkoutBtn">
+        <span class="btn-text">Proceed to Checkout</span>
+        <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+      </button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <!-- Booking Confirmation Modal with Confetti -->
+  <div class="modal-backdrop" id="confirmationModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+      <div class="modal-icon-badge gold-shimmer-text">
+        <i class="fa-solid fa-crown"></i>
+      </div>
+      <h3 class="gold-shimmer-text modal-title">Reservation Confirmed!</h3>
+      <p class="modal-greeting">We are deeply honored to welcome you to DEMO.</p>
+      
+      <div class="modal-ticket">
+        <div class="ticket-header">
+          <span class="ticket-brand gold-text">DEMO RESERVATION VOUCHER</span>
+          <span class="ticket-id" id="modalBookingId">#DEMO-9482</span>
+        </div>
+        <div class="ticket-body">
+          <div class="ticket-field">
+            <span class="label">Guest Name:</span>
+            <span class="value" id="modalGuestName">Sir Edward Montgomery</span>
+          </div>
+          <div class="ticket-field">
+            <span class="label">Party Size:</span>
+            <span class="value" id="modalGuestCount">2 Guests</span>
+          </div>
+          <div class="ticket-field">
+            <span class="label">Date & Time:</span>
+            <span class="value" id="modalDateTime">Oct 24, 2026 at 06:30 PM</span>
+          </div>
+          <div class="ticket-field">
+            <span class="label">Seating:</span>
+            <span class="value gold-text" id="modalSeatingArea">Main Gold Atrium</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="modal-note">
+        A verification SMS and calendar invitation have been sent to your contacts. We look forward to creating an unforgettable evening.
+      </p>
+
+      <button class="btn btn-gold w-100" id="modalDoneBtn">
+        <span>Close & Return</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="backToTop" title="Back to Top" aria-label="Back to Top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
